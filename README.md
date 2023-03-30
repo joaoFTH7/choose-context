@@ -30,8 +30,6 @@ $ choose
 2-arn:aws:eks:us-east-1:
 3-arn:aws:eks:us-east-1:
 4-arn:aws:eks:us-east-1:
-Choose one context to load according to the number.:
-
 Choose one context to load according to the number.: 1
 Switched to context "arn:aws:eks:us-east-1:".
 Context loaded: arn:aws:eks:us-east-1:
