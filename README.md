@@ -3,6 +3,7 @@
 This script is to facilitate changing contexts between many kubernetes clusters configs.
 
 Some dependecies to use this:
+- [kubectl][kubectl] the Kubernetes command-line tool
 - [Kubernetes][kube-py] and [Pyinstaller][pyinstaller] libs
 - Python version >= 3.10.6
 
@@ -13,7 +14,12 @@ pip install -r requirements.txt
 
 After install these libs, run:
 ```
-pyinstaller -F choose.py #the script name can be anyone 
+pyinstaller -F main.py -n choose
+```
+Pyinstaller parameters used:
+```bash
+-F Create a one-file bundled executable.
+-n Name to assign to the bundled app and spec file "(default: first script's basename)"
 ```
 
 This will create one file in `dist/` with name of your script, copy that file to your `/bin` directory and enjoy changing contexts in a easier way
@@ -36,5 +42,6 @@ Context loaded: arn:aws:eks:us-east-1:
 ```
 
 [//]: # (important links)
+[kubectl]: <https://kubernetes.io/docs/tasks/tools/>
 [pyinstaller]: <https://pypi.org/project/pyinstaller/>
 [kube-py]: <https://github.com/kubernetes-client/python/>
